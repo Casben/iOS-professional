@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
     }
     
     var password: String? {
-        return loginView.usernameTextField.text
+        return loginView.passwordTextField.text
     }
 
     override func viewDidLoad() {
@@ -89,6 +89,14 @@ extension LoginViewController {
         
         if username.isEmpty || password.isEmpty {
             configureView(withMessage: "Username / password cannot be blank")
+            return
+        }
+        
+        
+        if username == "Kevin" && password == "Welcome" {
+            signInButton.configuration?.showsActivityIndicator = true
+        } else {
+            configureView(withMessage: "Incorrect Username / password")
         }
     }
     
