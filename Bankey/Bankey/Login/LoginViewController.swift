@@ -9,6 +9,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    let titleLabel = UILabel()
     let loginView = LoginView()
     let signInButton = UIButton(type: .system)
     let errorMessageLabel = UILabel()
@@ -32,6 +33,13 @@ class LoginViewController: UIViewController {
 extension LoginViewController {
     
     private func style() {
+        
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.text = "Bankey"
+        titleLabel.textAlignment = .center
+        titleLabel.numberOfLines = 0
+        titleLabel.font = .systemFont(ofSize: 48, weight: .medium)
+        
         loginView.translatesAutoresizingMaskIntoConstraints = false
         
         signInButton.translatesAutoresizingMaskIntoConstraints = false
@@ -48,9 +56,16 @@ extension LoginViewController {
     }
     
     private func layout() {
+        view.addSubview(titleLabel)
         view.addSubview(loginView)
         view.addSubview(signInButton)
         view.addSubview(errorMessageLabel)
+        
+        NSLayoutConstraint.activate([
+            titleLabel.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
+            titleLabel.trailingAnchor.constraint(equalTo: loginView.trailingAnchor),
+            titleLabel.bottomAnchor.constraint(greaterThanOrEqualTo: loginView.topAnchor, constant: -150)
+        ])
         
         NSLayoutConstraint.activate([
             loginView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
@@ -58,6 +73,7 @@ extension LoginViewController {
             view.trailingAnchor.constraint(equalToSystemSpacingAfter: loginView.trailingAnchor, multiplier: 1),
         
         ])
+        
         
         NSLayoutConstraint.activate([
             signInButton.topAnchor.constraint(equalToSystemSpacingBelow: loginView.bottomAnchor, multiplier: 2),
