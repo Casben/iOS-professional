@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginViewController.swift
 //  Bankey
 //
 //  Created by Herbert Dodge on 2/27/24.
@@ -74,7 +74,6 @@ extension LoginViewController {
         
         ])
         
-        
         NSLayoutConstraint.activate([
             signInButton.topAnchor.constraint(equalToSystemSpacingBelow: loginView.bottomAnchor, multiplier: 2),
             signInButton.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
@@ -108,9 +107,9 @@ extension LoginViewController {
             return
         }
         
-        
         if username == "Kevin" && password == "Welcome" {
             signInButton.configuration?.showsActivityIndicator = true
+            errorMessageLabel.isHidden = true
         } else {
             configureView(withMessage: "Incorrect Username / password")
         }
