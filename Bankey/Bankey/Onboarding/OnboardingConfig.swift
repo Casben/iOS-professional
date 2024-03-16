@@ -17,9 +17,9 @@ enum OnboardingConfig: String {
         case .delorean:
             return "Bankey is faster, easier to use, and has a brand new look and feel that will make you feel like you are back in 1989."
         case .thumbs:
-            return ""
+            return "Lean more at www.bankey.com."
         case .world:
-            return ""
+            return "Move your money around the world quickly and securely."
         }
     }
 }

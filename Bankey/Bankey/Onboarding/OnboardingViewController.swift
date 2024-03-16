@@ -27,13 +27,14 @@ class OnboardingViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
-    required convenience init(coder: NSCoder) {
-        self.init(coder: coder)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
 
 extension OnboardingViewController {
     func style() {
+        view.backgroundColor = .systemBackground
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.spacing = 20
