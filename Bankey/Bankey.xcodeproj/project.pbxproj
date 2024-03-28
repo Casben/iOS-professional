@@ -18,6 +18,7 @@
 		CBD5C6EC2BAE532C00AD13E7 /* DummyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5C6EB2BAE532C00AD13E7 /* DummyVC.swift */; };
 		CBD5C6EF2BAF199000AD13E7 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5C6EE2BAF199000AD13E7 /* LocalState.swift */; };
 		CBD5C6F12BAF21A100AD13E7 /* UIViewcontroller+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5C6F02BAF21A100AD13E7 /* UIViewcontroller+Utils.swift */; };
+		CBD5C6F32BB5F5DF00AD13E7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5C6F22BB5F5DF00AD13E7 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		CBD5C6EB2BAE532C00AD13E7 /* DummyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyVC.swift; sourceTree = "<group>"; };
 		CBD5C6EE2BAF199000AD13E7 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		CBD5C6F02BAF21A100AD13E7 /* UIViewcontroller+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewcontroller+Utils.swift"; sourceTree = "<group>"; };
+		CBD5C6F22BB5F5DF00AD13E7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				CBAF822B2B966ABE0048F3B9 /* Onboarding */,
 				CBD5C6ED2BAF196C00AD13E7 /* Utils */,
 				CBAF82272B8FBF420048F3B9 /* Files */,
+				CBD5C6F22BB5F5DF00AD13E7 /* MainViewController.swift */,
 			);
 			path = Bankey;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				CBD5C6F12BAF21A100AD13E7 /* UIViewcontroller+Utils.swift in Sources */,
 				CBAF822D2B966AE90048F3B9 /* OnboardingContainerViewController.swift in Sources */,
 				CBD5C6EF2BAF199000AD13E7 /* LocalState.swift in Sources */,
+				CBD5C6F32BB5F5DF00AD13E7 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
